@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+// import App from './App';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import reportWebVitals from "./reportWebVitals";
+import NavbarComponet from "./components/Navbar";
+import CarouselComponent from "./components/CarouselComponents";
+import CategoryCarousel from "./components/CategoriesCarousel";
+import Products from "./components/products";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <NavbarComponet />
+    <CarouselComponent />
+    <CategoryCarousel />
+    <Products />
   </React.StrictMode>
 );
 
