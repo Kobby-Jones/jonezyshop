@@ -3,7 +3,6 @@ import { BsCart4, BsSearch } from 'react-icons/bs';
 import { MdAccountCircle } from 'react-icons/md'
 import {SiFireship} from 'react-icons/si'
 import { Button, Dropdown, Form, FormControl, Nav, Navbar } from "react-bootstrap";
-
 function NavbarComponet() {
     return (
       <Navbar className="px-4 bg-light" expand="lg">

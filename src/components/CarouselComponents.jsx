@@ -7,9 +7,9 @@ import { FcHome, FcElectronics, FcAutomotive } from "react-icons/fc";
 import { MdComputer } from "react-icons/md";
 import { MdSportsBaseball } from "react-icons/md";
 import { GrGamepad } from "react-icons/gr";
+
 function CarouselComponent() {
 
-    
     return (
       <Container className="p-4">
         <Row>

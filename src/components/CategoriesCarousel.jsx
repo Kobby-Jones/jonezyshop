@@ -6,6 +6,7 @@ import fashion from "../../src/images/fashion.jpg"
 import laptop from "../../src/images/laptop.jpg"
 import automobile from "../../src/images/automobile.jpg"
 import { Card, Col, Container, Row } from 'react-bootstrap';
+
 function CategoryCarousel() {
     return (
       <Container className="mb-5">
