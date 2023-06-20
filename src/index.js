@@ -16,7 +16,9 @@ root.render(
     <NavbarComponet />
     <CarouselComponent />
     <CategoryCarousel />
-    <Products />
+    <Products skip={10} title={"Don't Miss Out This Amazing Offer"} />
+    <Products skip={0} title={"We've Got All Your Needs Covered"} />
+    <Products skip={40} title={"Best Flash Deals Of The Month"} />
   </React.StrictMode>
 );
 
