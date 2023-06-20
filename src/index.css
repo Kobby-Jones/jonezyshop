@@ -54,4 +54,10 @@ hr{
   width: 200px !important;
   
 }
+.product-container{
+  width: 80% !important;
+}
+.product-card{
+  margin-bottom: 10px;
+}
 }

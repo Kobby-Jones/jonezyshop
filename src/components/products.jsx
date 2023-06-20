@@ -18,19 +18,27 @@ function Products({skip, title}) {
         console.log(products);
     }, [products]);
     return (
-      <Container>
+      <Container className="product-container">
         <Row className="bg-light pb-3 mb-4 text-center">
-          <h1 className="bg-info fs-4 py-2">{title}</h1>
+          <h1
+            className="text-light fs-4 py-2"
+            style={{
+              background: "linear-gradient(to top, #2c3e50, #3498db)",
+            }}
+          >
+            {title}
+          </h1>
           {products.map((product, index) => (
             <Col lg="2" key={index}>
-              <a href="joezy" className='text-decoration-none'>
+              <a href="joezy" className="text-decoration-none">
                 <Card
-                  className="text-center"
+                  className="text-center product-card"
                   style={{
                     height: "250px",
                   }}
                 >
                   <Card.Img
+                    className="product-image"
                     style={{ height: "150px" }}
                     src={product.thumbnail}
                   />
@@ -38,7 +46,7 @@ function Products({skip, title}) {
                     {product.title.substring(0, 16) + "...."}
                   </Card.Title>
                   <Card.Title className="fs-6 text-start ms-3">
-                    GH&#8373; {product.price - 4}
+                    GH&#8373; {product.price - (10 / 100) * product.price}
                   </Card.Title>
                   <Card.Title className="fs-6 text-secondary ms-3 text-start text-decoration-line-through">
                     GH&#8373; {product.price}
