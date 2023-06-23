@@ -2,11 +2,13 @@ import { Col, Container, Row, Card } from 'react-bootstrap';
 import Product1 from '../../src/images/flash-sales-3.png'
 import Product2 from '../../src/images/flash-sales.png'
 import Product3 from '../../src/images/weekend-sales.png'
+import Product4 from '../../src/images/mega_image.png'
 import { GiShoppingBag, GiSmartphone, GiClothes } from "react-icons/gi";
 import { FcHome, FcElectronics, FcAutomotive } from "react-icons/fc";
 import { MdComputer } from "react-icons/md";
 import { MdSportsBaseball } from "react-icons/md";
 import { GrGamepad } from "react-icons/gr";
+
 
 function CarouselComponent() {
 
@@ -14,11 +16,12 @@ function CarouselComponent() {
       <Container className="p-4">
         <Row>
           <Col lg="3">
-            <Card className="pt-5" style={
-              {
-                height:'400px'
-              }
-            }>
+            <Card
+              className="pt-5"
+              style={{
+                height: "400px",
+              }}
+            >
               <ul className="list-unstyled">
                 <li className="ms-3 my-2">
                   <a
@@ -127,6 +130,16 @@ function CarouselComponent() {
                 <div className="carousel-item">
                   <img
                     src={Product2}
+                    className="d-block w-100"
+                    alt="..."
+                    style={{
+                      height: "400px",
+                    }}
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={Product4}
                     className="d-block w-100"
                     alt="..."
                     style={{
